@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="471.0" prefWidth="771.0" style="-fx-background-color: #8cd1b4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cwtask4.SearchCustomerController">
+   <children>
+      <Label layoutX="41.0" layoutY="60.0" prefHeight="41.0" prefWidth="222.0" text="Enter the vehicle number">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearch" layoutX="292.0" layoutY="60.0" prefHeight="41.0" prefWidth="197.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="571.0" layoutY="60.0" mnemonicParsing="false" onAction="#searchBtn" prefHeight="41.0" prefWidth="70.0" text="Search">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+      <Pane fx:id="detailsPane" layoutX="91.0" layoutY="125.0" prefHeight="303.0" prefWidth="576.0">
+         <children>
+            <Label layoutX="144.0" layoutY="21.0" prefHeight="32.0" prefWidth="83.0" text="Details">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="86.0" text="First Name          :-">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="131.0" text="Last Name           :-">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="181.0" text="Vehicle Number  :-">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="232.0" text="No. of Litres        :-">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFirst" editable="false" layoutX="227.0" layoutY="74.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtLast" editable="false" layoutX="227.0" layoutY="125.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtVehicle" editable="false" layoutX="227.0" layoutY="175.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtLitres" editable="false" layoutX="227.0" layoutY="226.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
